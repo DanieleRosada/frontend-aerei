@@ -1,0 +1,5 @@
+<agm-map [zoom]="zoom" [latitude]="center[0]" [longitude]="center[1]" [styles]="styleMap">
+
+  <app-draw *ngFor="let a of airplanes" [p]="a.p" [color]="a.color"></app-draw>
+
+</agm-map>

@@ -1,1 +1,173 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('./image/world.jpg');
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+  font-weight: 300;
+}
+
+agm-map {
+  height: 100vh;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.color {
+  border: solid 2px black;
+  width: 100%;
+  height: 15px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+.card-style {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-style .card-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.card-style .card-body {
+  padding: 2rem;
+}
+
+.form-style {
+  width: 100%;
+}
+
+.btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>input, .form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+select{
+  border: 1px solid transparent;
+  border-radius: 2rem !important;
+}
+
+select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.ngx-datepicker-position-bottom-left {
+  z-index: 1;
+
+}
+
+.spinner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-button{
+  position: absolute;
+  left: 20px;
+  top: 70px;
+}
+
+i{
+  color: #007BFF;
+}

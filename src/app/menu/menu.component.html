@@ -1,0 +1,28 @@
+<div class="card card-style my-5">
+  <div class="card-body">
+
+    <h1 class="card-title text-center">Airplanes control</h1>
+
+    <div *ngFor="let a of airplanes">
+
+      <div class="bold">{{a.name}}</div>
+      <div class="color" [style.background-color]="a.color"></div>
+
+      <div *ngIf="a.p; else zerop">
+        <p style="margin: 0">Last Position: {{a.p.position[0]}}, {{a.p.position[1]}}</p>
+        <p>Time: {{time(a.p.time)}}</p>
+
+        <p *ngIf="a.p.altitude < 3000 || a.p.altitude > 10000; else alert" style="color: red;">Altitude:{{a.p.altitude}}</p>
+        <ng-template #alert>
+          <p style="color: green">Altitude: {{a.p.altitude}}</p>
+        </ng-template>
+
+      </div>
+
+      <ng-template #zerop>
+        <p class="bold">Today there are no positions </p>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

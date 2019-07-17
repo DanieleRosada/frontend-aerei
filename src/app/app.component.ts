@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'prova-esame-frontend';
+  airplanes : Array<any> = [];
+  openMenu : boolean = true;
+  constructor() { }
+
+  ngOnInit() {}
+
+  changeOpenMenu(){
+    this.openMenu = !this.openMenu;
+  }
 }
